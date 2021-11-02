@@ -42,7 +42,7 @@ int uniquePathsWithObstacles(vector<vector<int>>& A)
 	}
 	
 
-	return paths[r - 1];
+	return paths[r - 1][c - 1];
 }
 
 
