@@ -48,9 +48,8 @@ int uniquePathsWithObstacles(vector<vector<int>>& A)
 
 int main()
 {
-vector<vector<int>> A = { { 0, 0, 0 },
-							{ 0, 1, 0 },
-							{ 0, 0, 0 } };
+vector<vector<int>> A = { { 0, 0, 0 }, { 0, 1, 0 }, { 0, 0, 0 } };
 							
-cout << uniquePathsWithObstacles(A) << " \n";											
+cout << uniquePathsWithObstacles(A) << " \n";	
+return 0;
 }
