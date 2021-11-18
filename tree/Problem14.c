@@ -29,7 +29,7 @@ bool print_ancestors(struct node *root, int target)
     if (root->data == target)
         return true;
  
-    if ( printAncestors(root->left, target) || printAncestors(root->right, target) )
+    if ( print_ancestors(root->left, target) || print_ancestors(root->right, target) )
     {
         cout << root->data << " ";
         return true;
@@ -47,6 +47,6 @@ int main()
   root->left->right = newnode(1);
   root->left->left->left  = newnode(6);
  
-  print_ancestors(root, 1);
+  print_ancestors(root, 6);
   return 0;
 }
